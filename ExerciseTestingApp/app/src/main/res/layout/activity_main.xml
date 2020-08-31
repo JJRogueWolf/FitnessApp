@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/pushUp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="PushUp"
+        android:textAllCaps="false"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/squat"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="Squat"
+        android:textAllCaps="false"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/plank"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="Plank"
+        android:textAllCaps="false"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:id="@+id/flex"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="Flexibility"
+        android:textAllCaps="false"
+        android:textSize="30dp"/>
+
+</LinearLayout>

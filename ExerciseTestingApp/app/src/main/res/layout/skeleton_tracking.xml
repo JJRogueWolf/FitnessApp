@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.perfit.jobin.exercisetestingapp.SkeletonDrawingView
+                android:id="@+id/skeletonDrawingView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/weight_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="H,3:4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:alpha="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="H,3:4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/container"
+                android:descendantFocusability="beforeDescendants"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/counDisplay"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/printFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/counDisplay"
+                    android:gravity="center"
+                    android:textSize="25dp" />
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_below="@+id/printFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/printSecond"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hello :-> 1.233"
+                            android:textSize="50dp"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

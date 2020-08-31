@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GenderFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/age_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/roboto_regular"
+        android:alpha="0.8"/>
+
+    <!--android:shadowRadius="30"-->
+    <!--android:shadowColor="#000000"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Male"
+            android:gravity="center"
+            android:id="@+id/male"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Female"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/female" />
+
+    </LinearLayout>
+
+</RelativeLayout>

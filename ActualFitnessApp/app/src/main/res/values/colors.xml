@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#363636</color>
+    <color name="colorAccent">#E26363</color>
+    <color name="colorAccentForcheckBox">#EBEBEB</color>
+    <color name="dotsColor">#FFA4A4</color>
+    <color name="whiteColor">#ECECEC</color>
+    <color name="dashboardNotSelectedColor">#4E4E4E</color>
+    <color name="getstarted_color">#1C2D44</color>
+    <color name="getstarted_nav_color">#1C2D44</color>
+    <color name="onboard_color">#FFA4A4</color>
+    <color name="main_login_color">#183B79</color>
+    <color name="main_login_color_bottomNavi">#0D2E42</color>
+    <color name="normal_login">#1F1F1F</color>
+<!--    <color name="baseboard_nav_color">#E9707D</color>-->
+    <color name="baseboard_nav_color">#333333</color>
+</resources>

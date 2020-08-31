@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activities.TotalScoreDisplay">
+
+    <RelativeLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/score_bg" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/countDisplay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textSize="120dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="30"
+                android:text="25"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countText" />
+
+            <TextView
+                android:id="@+id/countText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="30"
+                android:text="Count:"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.075" />
+
+            <TextView
+                android:id="@+id/whoaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="56dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Hmmm..."
+                android:textColor="#C9FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/feedback"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Need Improvement"
+                android:textColor="#B7FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/countDisplay"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whoaa"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/tryAgainExercise"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:background="@drawable/retry_icon"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.934" />
+
+            <TextView
+                android:id="@+id/relaxTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="10s"
+                android:textColor="#E2E2E2"
+                android:textSize="40dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.976"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.045" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

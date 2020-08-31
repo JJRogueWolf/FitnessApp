@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="#000"
+    tools:context=".activities.Achievement">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/performance_bg" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.3"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="65dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_performance_board"
+                android:backgroundTint="#953D3D3D"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4151"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cont23">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/squats_icon"
+                    android:tint="#E2E2E2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Squats"
+                    android:textColor="#E2E2E2"
+                    android:textSize="25dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/squatslinearLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/squatslinearLayout2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/squatstextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nCount"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/squatsTotalCount"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/squatsTotalCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:text="8"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/squatstextView1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/squatslinearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/squatslinearLayout1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/squatstextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Best\nScore"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/squatsBestScore"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/squatsBestScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:text="10"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/squatstextView7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/squatslinearLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/squatstextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="4dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nTime"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/squatsTotalTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/squatsTotalTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/squatstextView9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4151"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_performance_board"
+                android:backgroundTint="#953D3D3D"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pushup_icon"
+                    android:tint="#E2E2E2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Push Up"
+                    android:textColor="#E2E2E2"
+                    android:textSize="25dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/pushuplinearLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/pushuplinearLayout2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/pushuptextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nCount"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/pushupTotalCount"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pushupTotalCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:text="8"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pushuptextView1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/pushuplinearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/pushuplinearLayout1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/pushuptextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Best\nScore"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/pushupBestScore"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pushupBestScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:text="10"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pushuptextView7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/pushuplinearLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/pushuptextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="4dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nTime"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/pushupTotalTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pushupTotalTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pushuptextView9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_performance_board"
+                android:backgroundTint="#953D3D3D"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plank_icon"
+                    android:tint="#E2E2E2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Plank"
+                    android:textColor="#E2E2E2"
+                    android:textSize="25dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/planklinearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/planklinearLayout3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/planktextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Best\nScore"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/plankBestScore"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/plankBestScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:text="10"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/planktextView7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/planklinearLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/planklinearLayout2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/planktextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="4dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nTime"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/plankTotalTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/plankTotalTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/planktextView9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_performance_board"
+                android:backgroundTint="#953D3D3D"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jumpingjack_transparent"
+                    android:tint="#E2E2E2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Jumping Jacks"
+                    android:textColor="#E2E2E2"
+                    android:textSize="25dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/jjlinearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/jjlinearLayout3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/jjtextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Best\nScore"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/jjBestScore"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/jjBestScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:text="10"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/jjtextView7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/jjlinearLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/jjlinearLayout2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/jjtextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="4dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Total\nTime"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/jjTotalTime"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/jjTotalTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#E2E2E2"
+                            android:textSize="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/jjtextView9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cont23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="bottom"
+                    app:layout_constraintBottom_toTopOf="@+id/rela1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!--<ImageButton-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="20"-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:background="#00000000" />-->
+
+                    <ImageButton
+                        android:id="@+id/shareButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#00000000"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:src="@drawable/share_button"
+                        android:tint="#99A3A8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/performance_pop"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageButton
+                        android:id="@+id/performance_pop"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#00000000"
+                        android:gravity="bottom"
+                        android:scaleX="1.1"
+                        android:scaleY="1.1"
+                        android:src="@drawable/threedot"
+                        android:tint="#99A3A8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/shareButton"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="24dp"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center_vertical"
+                        android:text="Performance"
+                        android:textColor="#99A3A8"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/shareButton"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rela1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/const1">
+
+                    <ImageView
+                        android:id="@+id/awardimageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:cropToPadding="false"
+                        android:src="@drawable/award_performance"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="342dp"
+                        android:layout_height="335dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:max="10"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/circular_progressbar_outline"
+                        android:progressTint="#424242"
+                        android:rotation="270"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/reward_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="335dp"
+                        android:layout_height="335dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:progressDrawable="@drawable/circular_progressbar"
+                        android:progressTint="#657191"
+                        android:rotation="90"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rela1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Squat"
+                            android:textColor="#E2E2E2"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/squat_count_main"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/squat_count_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="#E2E2E2"
+                            android:textSize="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout64"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="Pushup"
+                            android:textColor="#E2E2E2"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/pushup_count_main"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pushup_count_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="75"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:text="10"
+                            android:textColor="#E2E2E2"
+                            android:textSize="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout65"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Plank"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/plank_count_main"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/plank_count_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="0:32"
+                            android:textColor="#E2E2E2"
+                            android:textSize="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="20"
+                        android:orientation="vertical"
+                        android:weightSum="100"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView68"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:gravity="center"
+                            android:text="Jumping Jacks"
+                            android:textColor="#E2E2E2"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toTopOf="@+id/jump_time_main"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/jump_time_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneue_light"
+                            android:gravity="center"
+                            android:text="0:12"
+                            android:textColor="#E2E2E2"
+                            android:textSize="70dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <!--<org.perfit.fitness.fragment_views_adapters.VerticalViewPager-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/performanceViewPager"/>-->
+
+</RelativeLayout>

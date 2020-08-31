@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activities.OnBoard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topSlider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="97"
+            android:background="@drawable/fitnessappbackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/imageslider"
+                android:layout_width="match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = "100">
+
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"/>
+
+            <LinearLayout
+                android:id="@+id/dotLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30">
+
+                <Button
+                    android:id="@+id/letsGoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lets Go >>"
+                    android:gravity="center"
+                    android:textColor="#5A5959"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_light"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

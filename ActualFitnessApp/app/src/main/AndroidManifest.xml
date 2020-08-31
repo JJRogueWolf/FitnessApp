@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.perfit.fitness">
+
+    <application
+        android:name=".utilities.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".exercise.PhoneOrientation"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activities.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <!--
+activity
+            android:name="org.perfit.fitness.activities.SplashScreeen"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity
+        -->
+        <activity
+            android:name=".activities.BaseDashBoard"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.SEND"/> -->
+            <!-- <action android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <data android:mimeType="text/plain" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".activities.GifIntro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GetStarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TotalScoreDisplay"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.SigningPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OnBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VideoManager"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.IntroVideo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.RegistrationWeight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MoreComing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera.ClassifierActivity"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.VideoPlayer"
+            android:noHistory="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.MainLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NormalLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.auzora.perfit.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Perfit Fitness</string>
+    <string name="camera_error">Camera Error</string>
+    <string name="facebook_app_id">453174218868369</string>
+    <string name="fb_login_protocol_scheme">fb453174218868369</string>
+    <string name="WelcomeText">TextView</string>
+    <string name="yoga_class_8">images</string>
+    <string name="a_small_description_to_written_here">A small description to written here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="choose_your_height">Choose your Height</string>
+    <string name="choose_your_weight">Choose your Weight</string>
+    <string name="continueButton">continue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="email_format">Enter valid email address</string>
+    <string name="email_empty">Field empty</string>
+    <string name="lessWord">Atleast 3 characters</string>
+
+    <string name="phone_too_tilted">Your phone is too tilted, ensure it is upright</string>
+</resources>

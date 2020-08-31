@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ExerciseTestingApp</string>
+    <string name="WelcomeText">TextView</string>
+    <string name="yoga_class_8">images</string>
+    <string name="a_small_description_to_written_here">A small description to written here</string>
+    <string name="camera_error">Camera Error</string>
+
+    <string name="choose_your_height">Choose your Height</string>
+    <string name="choose_your_weight">Choose your Weight</string>
+    <string name="continueButton">continue</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_performance_stats">PerformanceStats</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

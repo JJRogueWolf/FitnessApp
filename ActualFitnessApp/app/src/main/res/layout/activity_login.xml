@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".activities.MainLogin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_background_img" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A1F44"
+        android:alpha="0.62"/>
+
+    <TextView
+        android:id="@+id/logintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Change starts here"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/logindesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/logindesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="10dp"
+        android:text="Save your progress to access your personal training program!"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/normalRela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/normalRela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/facRela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/normalLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#FD8287"
+            android:drawableStart="@drawable/normal_login_icon"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:alpha="0.9"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="Email"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/facRela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/googlRela"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/facebookSignInHidden"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/facebookCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Facebook"
+            android:textSize="17dp"
+            android:alpha="0.9"
+            android:drawableStart="@drawable/facebook_login_icon"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3b5998"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/googlRela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInHidden"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/googleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:textColor="#333333"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/google_login_icon"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingEnd="70dp"
+            android:alpha="0.9"
+            android:text="Google"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
